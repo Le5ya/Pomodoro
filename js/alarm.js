@@ -1,5 +1,14 @@
-const audio = new Audio('audio/epic.mp3')
+import { state } from './state.js';
+
+const audio =  {
+  work: new Audio('audio/dudu.mp3'), 
+  break: new Audio('audio/wave2.mp3'),
+  relax: new Audio('audio/august.mp3'),
+}
+
+
+
 
 export const alarm = () => {
-  audio.play();
+  audio[state.status].play();
 }
