@@ -1,11 +1,12 @@
-import { initControl } from './control.js'
+import { initControl, changeActiveBtn } from './control.js'
 import { state } from './state.js'
 import { initTodo } from './todo.js'
 
 const initPomodoro = () =>{
-  // initControl();
-
+  initControl();
   initTodo();
+  changeActiveBtn('work');
+  stop();
   
 }
 

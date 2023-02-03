@@ -23,7 +23,7 @@ for (let i = 0; i < navBtns.length; i++) {
 
 }
 
-const stop = () => {
+export const stop = () => {
   clearTimeout(state.timerId);
   state.isActive = false;
   btnStart.textContent = 'Start';
@@ -58,7 +58,6 @@ export const initControl = () => {
     })
     
   }
-
 
 
   showTime(state.timeLeft);
